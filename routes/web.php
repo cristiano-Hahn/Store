@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+//Esta Rota chama o metodo  CadastroCliente do controllerr (Cadastro_Controller)
+Route::get('/cliente',['uses'=>'Cadastro_Controller@CadastroCliente']);
