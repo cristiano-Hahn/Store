@@ -91,5 +91,28 @@
                 </div>
             </div>
         </div>
+        <div>
+        <form action="/cadastro" method="POST">
+                          {{csrf_field()}}
+                            <center>
+                          
+                                        <label> Categoria</label>
+                                        <input type="text" name="nome" required>
+                                        <button type="submit" >Cadastrar</button>
+                            
+                            </center>
+                            </form>
+                            <form action="/cadastro" method="POST">
+                          {{csrf_field()}}
+                            <center>
+                          
+                                        <label> Categoria</label>
+                                        <input type="hidden" name="method" value="put">
+                                        <input type="text" name="nome" required>
+                                        <button type="submit" >Cadastrar</button>
+                            
+                            </center>
+                            </form>
+        </div>
     </body>
 </html>

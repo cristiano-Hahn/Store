@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/principal', ['uses'=>'Inicio@index']
+);
+
+Route::get('/contato', ['uses'=>'ContatoController@criar']
+);
+
+
+
