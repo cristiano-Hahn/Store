@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+<<<<<<< HEAD
 Route::get('/principal', ['uses'=>'controllerLogin@index']);
 
 Route::get('/teste', ['uses'=>'controllerLogin@teste']
@@ -29,7 +30,13 @@ $this->resource('chamar', 'Inicio@Autenticar');
 Route::get('/contato/{id?}', function ($id = null) {
     return "Contato id = $id";
 });
+=======
+Route::get('/principal', ['uses'=>'Inicio@index']
+);
 
-Route::post('/contato', function () {
-    return "Contato POST";
-});
+Route::get('/contato', ['uses'=>'ContatoController@criar']
+);
+
+
+>>>>>>> bh
+
