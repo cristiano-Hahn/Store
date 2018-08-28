@@ -18,8 +18,10 @@ Route::get('/', function () {
 Route::get('/principal', ['uses'=>'Inicio@index']
 );
 
-Route::get('/contato', ['uses'=>'ContatoController@criar']
+Route::post('/chamar1', 'Inicio@Autenticar'
 );
+
+$this->resource('chamar', 'Inicio@Autenticar');
 
 
 
