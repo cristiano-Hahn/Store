@@ -7720,7 +7720,7 @@ fieldset[disabled] .form-control {
 
 /* Login Page ================================== */
 .login-page {
-  background-image: linear-gradient(45deg, green, red) ;
+  background-image: linear-gradient(45deg, green, orange) ;
   padding-left: 0;
   max-width: 360px;
   margin: 10% auto;
@@ -8039,4 +8039,24 @@ html.ie11 .dropdown-menu ul.menu li a {
 
 html.ie11 .bs-searchbox .form-control {
   width: 90%; }
+
+  .submit-eye {
+    position:absolute;
+    top:5px; right:0;
+    z-index:10;
+    border:none;
+    background:transparent;
+    outline:none;
+  }
+
+  .submit-line {
+    position: relative;
+    /*width: 600px;*/
+  }
+
+  .submit-line input {
+    width: 100%;
+  }
+
+  
 

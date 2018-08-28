@@ -1,15 +1,11 @@
 <?php
-
-include 'conecta.php';
- 
-$categoria =$_POST["categoria"];
-$sql = "insert into categoria(categoria) 
-values('$categoria')";
-
-if(mysqli_query($con,$sql)){
-redirect('cadastros/cadCategoria?resposta=1');
+$host = "localhost";
+$usuario = "root";
+$senha = "";
+$dbase = "veiculos";
+$con = mysqli_connect($host, $usuario, $senha, $dbase);
+if (!$con) {
+    echo "Erro de conex�o ao banco de dados!";
+    exit();
 }
-
-redirect('cadastros/cadCategoria?resposta=2');
-  
 ?>
