@@ -4,11 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class Controller_Login extends Controller
+class controllerLogin extends Controller
 {
     public function Index()
     {
-        return view('view_index');
+        return view('viewIndex');
     }
 
     public function Autenticar()
