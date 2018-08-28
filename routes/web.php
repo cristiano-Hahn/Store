@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/principal', ['uses'=>'Inicio@index']
+Route::get('/principal', ['uses'=>'Controller_Login@index']
 );
 
 Route::post('/chamar1', 'Inicio@Autenticar'
