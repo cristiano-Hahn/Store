@@ -15,13 +15,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/principal', ['uses'=>'controllerLogin@index']
-);
+Route::get('/principal', ['uses'=>'controllerLogin@index']);
 
-Route::post('/chamar1', 'Inicio@Autenticar'
-);
+Route::post('/chamar1', 'Inicio@Autenticar');
+
+Route::get('/telainicio', 'controllerTelainicial@telainicial');
 
 $this->resource('chamar', 'Inicio@Autenticar');
+
+
+
 
 
 
