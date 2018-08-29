@@ -16,8 +16,10 @@ class controllerLogin extends Controller
     public function autenticar(Request $req)
     {
         $dados = $req->all();
+        
+        
 
-        return  $dados['login'] 
+        return view('autenticar');  
     
 
 
