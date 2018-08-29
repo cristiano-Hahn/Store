@@ -25,6 +25,9 @@ Route::get('/telainicio', 'controllerTelainicial@telainicial');
 
 Route::post('/autenticar',['uses'=>'controllerLogin@autenticar']);
 
+Route::get('/cliente', 'controllerCadastro@cadastroCliente'
+);
+
 $this->resource('chamar', 'Inicio@Autenticar');
 
 Route::get('/contato/{id?}', function ($id = null) {
