@@ -18,6 +18,9 @@ Route::get('/', function () {
 Route::get('/principal', ['uses'=>'Inicio@index']
 );
 
+Route::get('/vendedora', ['uses'=>'Inicio@cadvendedora']
+);
+
 Route::get('/contato', ['uses'=>'ContatoController@criar']
 );
 

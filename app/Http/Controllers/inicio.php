@@ -11,6 +11,11 @@ class Inicio extends Controller
         return view('index');
     }
 
+    public function Cadvendedora()
+    {
+        return view('cadvendedora');
+    }
+
     public function Autenticar()
     {
         return view('autenticar');
