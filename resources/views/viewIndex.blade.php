@@ -1,6 +1,6 @@
 
 @extends('Bootstrap.extensao')
-@section('conteudo')
+
 <!DOCTYPE html>
 <html>
 <link rel="icon" src="img/logo.png" type="image/x-icon">
@@ -66,4 +66,3 @@ document.getElementById("senha").type = "text";
 </body>
 
 </html>
-@endsection
