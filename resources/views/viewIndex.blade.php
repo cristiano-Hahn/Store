@@ -1,6 +1,6 @@
 
 @extends('Bootstrap.extensao')
-@section('conteudo')
+
 <!DOCTYPE html>
 <html>
 <link rel="icon" src="img/logo.png" type="image/x-icon">
@@ -31,7 +31,7 @@ document.getElementById("senha").type = "text";
         </div>
         <div class="card">
             <div class="body">
-                 <form name="login" action="" method="POST">
+                 <form name="login" action="/autenticar" method="POST">
                     <div class="msg">Informe seu Usúario e Senha</div>
                     <div class="input-group">
                         <span class="input-group-addon">
@@ -66,4 +66,3 @@ document.getElementById("senha").type = "text";
 </body>
 
 </html>
-@endsection
