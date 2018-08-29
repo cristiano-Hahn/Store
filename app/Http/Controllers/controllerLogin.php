@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Http\Requests;
+
 class controllerLogin extends Controller
 {
     public function Index()
@@ -11,8 +13,13 @@ class controllerLogin extends Controller
         return view('viewIndex');
     }
 
-    public function Autenticar()
+    public function autenticar(Request $req)
     {
-        return view('autenticar');
+        $dados = $req->all();
+
+        return  $dados['login'] 
+    
+
+
     }
 }
