@@ -18,6 +18,8 @@ Route::get('/', function () {
 Route::get('/principal', ['uses'=>'controllerLogin@index']
 );
 
+Route::get('/telainicio', 'controllerTelainicial@telainicial');
+
 Route::post('/autenticar',['uses'=>'controllerLogin@autenticar']);
 
 $this->resource('chamar', 'Inicio@Autenticar');
