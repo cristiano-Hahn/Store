@@ -15,6 +15,9 @@
 
 </head>
 <script>
+if("exibe".checked){
+    document.getElementById("senha").type = "text";    
+}
 function mostraSenha(){
 document.getElementById("senha").type = "text";
 }
@@ -32,6 +35,7 @@ document.getElementById("senha").type = "text";
         <div class="card">
             <div class="body">
                  <form name="login" action="/autenticar" method="POST">
+                 {{ csrf_field() }}
                     <div class="msg">Informe seu Usúario e Senha</div>
                     <div class="input-group">
                         <span class="input-group-addon">
