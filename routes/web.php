@@ -15,19 +15,22 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/principal', ['uses'=>'controllerLogin@index']);
+Route::get('/login', ['uses'=>'controllerLogin@index']);
 
-Route::get('/teste', ['uses'=>'controllerLogin@teste']
-);
+Route::get('/teste', ['uses'=>'controllerLogin@teste']);
+
+Route::get('/vendedora', ['uses'=>'controllerVendedora@cadvendedora']);
+
+Route::get('/contato', ['uses'=>'ContatoController@criar']);
+
+
+Route::get('/contato', ['uses'=>'ContatoController@criar']);
 
 Route::get('/telainicio', 'controllerTelainicial@telainicial');
 
 Route::post('/autenticar',['uses'=>'controllerLogin@autenticar']);
 
-Route::get('/cliente', 'controllerCadastro@cadastroCliente'
-);
-
-Route::get('/principal', ['uses'=>'Inicio@index']
+Route::get('/cliente', 'controllerCliente@cadastro'
 );
 
 Route::get('/contato', ['uses'=>'ContatoController@criar']
