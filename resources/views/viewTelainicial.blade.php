@@ -5,34 +5,6 @@
   <head>
   <meta http-equiv="Content-type" content="text/html; charset=UTF-8"> 
   <meta name="generator" content="PSPad editor, www.pspad.com">
-  <link rel="stylesheet" type="text/css" href="stilo.css">
-  <!-- Bootstrap Core CSS -->
-     <!-- Bootstrap Core CSS -->
-     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- MetisMenu CSS -->
-<link href="bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
-
-<!-- DataTables CSS -->
-<link href="bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet">
-
-<!-- DataTables Responsive CSS -->
-<link href="bower_components/datatables-responsive/css/dataTables.responsive.css" rel="stylesheet">
-
-<!-- Custom CSS -->
-<link href="dist/css/sb-admin-2.css" rel="stylesheet">
-
-<!-- Custom Fonts -->
-<link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">]
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
    
   <title>Tela inicial</title>
@@ -44,7 +16,8 @@
 
 </head>	
 
-<body class="page-header">
+<body class="fundo">
+  
 	<!-- Modal -->
 	<div class="modal fade bs-example-modal-lg" id="myModal" role="dialog" aria-labelledby="myLargeModalLabel" data-backdrop="static">
 	  <div class="modal-dialog modal-lg" role="document">
@@ -68,7 +41,6 @@
 
 
 </center>
-
 
     <table class="table table-action" border="4">
    <tr>
