@@ -18,6 +18,9 @@ Route::get('/', function () {
 Route::get('/principal', ['uses'=>'controllerLogin@index']
 );
 
+Route::get('/teste', ['uses'=>'controllerLogin@teste']
+);
+
 Route::get('/telainicio', 'controllerTelainicial@telainicial');
 
 Route::post('/autenticar',['uses'=>'controllerLogin@autenticar']);
