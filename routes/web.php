@@ -15,14 +15,23 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/principal', ['uses'=>'Inicio@index']
+Route::get('/principal', ['uses'=>'controllerLogin@index']
 );
 
-Route::get('/vendedora', ['uses'=>'Inicio@cadvendedora']
-);
+Route::get('/teste', ['uses'=>'controllerLogin@teste']);
 
-Route::get('/contato', ['uses'=>'ContatoController@criar']
-);
+Route::get('/vendedora', ['uses'=>'controllerVendedora@cadvendedora']);
+
+Route::get('/contato', ['uses'=>'ContatoController@criar']);
+
+
+Route::get('/contato', ['uses'=>'ContatoController@criar']);
+
+Route::get('/telainicio', 'controllerTelainicial@telainicial');
+
+Route::post('/autenticar',['uses'=>'controllerLogin@autenticar']);
+
+$this->resource('chamar', 'Inicio@Autenticar');
 
 
 

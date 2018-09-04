@@ -88,7 +88,9 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap.css.map" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css.map" rel="stylesheet"
+    <link href="css/bootstrap.min.css.map" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 
   </body>
