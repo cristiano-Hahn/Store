@@ -12,7 +12,7 @@ class controllerLogin extends Controller
 {
     public function Index()
     {
-        return view('viewIndex');
+        return view('login');
     }
 
     public function teste()
@@ -40,7 +40,7 @@ class controllerLogin extends Controller
 </div>
 </center>
              <?php
-        return view('viewIndex');  
+        return view('login');  
     }
     }
 }

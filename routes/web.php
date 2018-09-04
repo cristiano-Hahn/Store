@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/principal', ['uses'=>'controllerLogin@index']);
+Route::get('/login', ['uses'=>'controllerLogin@index']);
 
 Route::get('/teste', ['uses'=>'controllerLogin@teste']);
 
@@ -31,9 +31,6 @@ Route::get('/telainicio', 'controllerTelainicial@telainicial');
 Route::post('/autenticar',['uses'=>'controllerLogin@autenticar']);
 
 Route::get('/cliente', 'controllerCliente@cadastro'
-);
-
-Route::get('/principal', ['uses'=>'Inicio@index']
 );
 
 Route::get('/contato', ['uses'=>'ContatoController@criar']
