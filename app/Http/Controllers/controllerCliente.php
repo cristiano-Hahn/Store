@@ -4,13 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class controllerCadastro extends Controller
+class controllerCliente extends Controller
 {
     public function Index()
     {
         return view('viewIndex');
     }
-    public function cadastroCliente()
+    public function cadastro()
     {
         return view('cadCliente');
     }

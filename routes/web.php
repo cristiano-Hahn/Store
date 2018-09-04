@@ -30,7 +30,7 @@ Route::get('/telainicio', 'controllerTelainicial@telainicial');
 
 Route::post('/autenticar',['uses'=>'controllerLogin@autenticar']);
 
-Route::get('/cliente', 'controllerCadastro@cadastroCliente'
+Route::get('/cliente', 'controllerCliente@cadastro'
 );
 
 Route::get('/principal', ['uses'=>'Inicio@index']
