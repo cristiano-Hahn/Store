@@ -12,6 +12,6 @@ class controllerCliente extends Controller
     }
     public function cadastro()
     {
-        return view('cadCliente');
+        return view('cliente');
     }
 }
