@@ -15,11 +15,6 @@ class controllerLogin extends Controller
         return view('viewIndex');
     }
 
-    public function teste()
-    {
-        return view('teste');
-    }
-
     public function autenticar(Request $req)
     {
         $dados = $req->all();
@@ -44,5 +39,6 @@ class controllerLogin extends Controller
          
     }
     }
+    
 }
 ?>
