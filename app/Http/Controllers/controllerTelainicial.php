@@ -8,7 +8,7 @@ class controllerTelainicial extends Controller
 {
     public function telainicial()
     {
-        return view('viewTelainicial');
+        return view('telainicial');
     }
 
 }
