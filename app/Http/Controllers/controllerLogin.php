@@ -24,13 +24,24 @@ class controllerLogin extends Controller
     {
         $dados = $req->all();
 
-        $verifica = DB ::table('users')->where(['login'=>$dados['login'],'password'=>$dados['senha']])->get(); 
+        $verifica = DB ::table('usuarios')->where(['nome'=>$dados['login'],'senha'=>$dados['senha']])->get(); 
         if(count($verifica) > 0)      
        {
             return view('teste');
           }
           else{
+              ?>
+              <center>
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Atenção!</strong> Usuário ou Senha Inválidos!
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+</center>
+             <?php
         return view('viewIndex');  
     }
     }
 }
+?>
