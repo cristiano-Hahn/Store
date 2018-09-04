@@ -21,19 +21,11 @@ Route::get('/teste', ['uses'=>'controllerLogin@teste']);
 
 Route::get('/vendedora', ['uses'=>'controllerVendedora@cadvendedora']);
 
-Route::get('/contato', ['uses'=>'ContatoController@criar']);
-
-
-Route::get('/contato', ['uses'=>'ContatoController@criar']);
-
 Route::get('/telainicio', 'controllerTelainicial@telainicial');
 
 Route::post('/autenticar',['uses'=>'controllerLogin@autenticar']);
 
 Route::get('/cliente', 'controllerCliente@cadastro'
-);
-
-Route::get('/contato', ['uses'=>'ContatoController@criar']
 );
 
 $this->resource('chamar', 'Inicio@Autenticar');
