@@ -40,7 +40,8 @@ class controllerLogin extends Controller
 </div>
 </center>
              <?php
-        return view('viewIndex');  
+        return view('viewIndex'); 
+         
     }
     }
 }
