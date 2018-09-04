@@ -17,7 +17,7 @@ class controllerLogin extends Controller
 
     public function teste()
     {
-        return view('teste');
+        return view('telaInicial');
     }
 
     public function autenticar(Request $req)
@@ -27,7 +27,7 @@ class controllerLogin extends Controller
         $verifica = DB ::table('usuarios')->where(['nome'=>$dados['login'],'senha'=>$dados['senha']])->get(); 
         if(count($verifica) > 0)      
        {
-            return view('teste');
+            return view('telaInicial');
           }
           else{
               ?>
