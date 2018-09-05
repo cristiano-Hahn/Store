@@ -30,7 +30,3 @@ Route::get('/cliente', 'controllerCliente@cadastro');
 Route::post('/cliente/save',['uses'=>'controllerCliente@save']);
 
 $this->resource('chamar', 'Inicio@Autenticar');
-
-Route::get('/contato/{id?}', function ($id = null) {
-    return "Contato id = $id";
-});

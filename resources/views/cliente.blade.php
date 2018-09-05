@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <link rel="icon" href="img/logo.jpg" type="image/x-icon">
-
+<meta name="csrf-token" content="{{ csrf_token() }}">
 <head>
 </head>						
 <body>
@@ -15,6 +15,7 @@
                     <div class="card">
                         <div class="body">
                             <form action="cliente/save" method="POST">
+                            @csrf
                                 <div class="row clearfix">
                                     <div class="body">
                                         <ul class="list-group">

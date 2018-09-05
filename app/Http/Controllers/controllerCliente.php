@@ -13,14 +13,19 @@ class controllerCliente extends Controller
     }
 
     public function save(Request $req){
+
+
+
         $cliente = new Cliente;
 
-        var_dump($req) ; 
-        exit;
-        $cliente->nome = 'Júlia';//$request->name;
+        $cliente->nome = $req['nome'];
+        $cliente->whatsapp = $req['whatsapp'];
+        $cliente->facebook = $req['facebook'];
+        $cliente->nome = $req['nome'];
+        $cliente->nome = $req['nome'];
 
         $cliente->save();
 
-        return view('cliente');
+        return redirect('/cliente');
     }
 }
