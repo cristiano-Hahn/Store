@@ -7,7 +7,6 @@
 </head>						
 <body>
 @extends('Bootstrap.extensao')
-
     <section class="content">
         <div class="container-fluid">
             <div class="row clearfix">
@@ -25,7 +24,7 @@
                                             </center>
                                         </ul>
                                     </div>
-                                    <div class="col-md-2">
+                                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <label> Nome</label>
@@ -33,43 +32,35 @@
                                             </div>
                                         </div>  
                                     </div>
-                                    <div class="col-md-2">
+                                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <label> Whatsapp</label>
-                                                <input type="text" class="form-control" name="endereco" required>
+                                                <input type="text" class="form-control" name="endereco">
                                             </div>
                                         </div>  
                                     </div>
-                                    <div class="col-md-2">
+                                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <label> Facebook</label>
-                                                <input type="text" class="form-control" name="bairro" required>
+                                                <input type="text" class="form-control" name="bairro">
                                             </div>
                                         </div>  
                                     </div>
-                                    <div class="col-md-2">
+                                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <label> Email</label>
-                                                <input type="text" class="form-control" name="cpf" required>
+                                                <input type="text" class="form-control" name="cpf">
                                             </div>
                                         </div>  
                                     </div>
-                                    <div class="col-md-2">
+                                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <label> Instagram</label>
-                                                <input type="text" class="form-control" name="telefone" required>
-                                            </div>
-                                        </div>  
-                                    </div>
-                                    <div class="col-md-2">
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <label> RG</label>
-                                                <input type="text" class="form-control" name="rg" required>
+                                                <input type="text" class="form-control" name="telefone">
                                             </div>
                                         </div>  
                                     </div>
@@ -79,7 +70,6 @@
                                     <center>    
                                         <button type="button" class="btn btn-danger waves-effect">Excluir</button>
                                     </center>
-                                    
                                 </div>
                             </form>
                         </div>
