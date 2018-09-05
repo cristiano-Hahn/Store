@@ -21,8 +21,8 @@ class controllerCliente extends Controller
         $cliente->nome = $req['nome'];
         $cliente->whatsapp = $req['whatsapp'];
         $cliente->facebook = $req['facebook'];
-        $cliente->nome = $req['nome'];
-        $cliente->nome = $req['nome'];
+        $cliente->email = $req['email'];
+        $cliente->instagram = $req['instagram'];
 
         $cliente->save();
 
