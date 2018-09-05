@@ -15,7 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-<<<<<<< HEAD
 Route::get('/principal', ['uses'=>'controllerLogin@index']);
 
 Route::get('/teste', ['uses'=>'controllerLogin@teste']
@@ -28,18 +27,14 @@ Route::post('/autenticar',['uses'=>'controllerLogin@autenticar']);
 Route::get('/cliente', 'controllerCadastro@cadastroCliente'
 );
 
-$this->resource('chamar', 'Inicio@Autenticar');
-
-Route::get('/contato/{id?}', function ($id = null) {
-    return "Contato id = $id";
-});
-=======
 Route::get('/principal', ['uses'=>'Inicio@index']
 );
 
 Route::get('/contato', ['uses'=>'ContatoController@criar']
 );
 
+$this->resource('chamar', 'Inicio@Autenticar');
 
->>>>>>> bh
-
+Route::get('/contato/{id?}', function ($id = null) {
+    return "Contato id = $id";
+});
