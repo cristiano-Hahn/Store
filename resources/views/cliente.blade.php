@@ -37,7 +37,7 @@
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <label> Whatsapp</label>
-                                                <input type="text" class="form-control" name="endereco">
+                                                <input type="text" class="form-control" name="whatsapp">
                                             </div>
                                         </div>  
                                     </div>
@@ -45,7 +45,7 @@
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <label> Facebook</label>
-                                                <input type="text" class="form-control" name="bairro">
+                                                <input type="text" class="form-control" name="facebook">
                                             </div>
                                         </div>  
                                     </div>
@@ -53,7 +53,7 @@
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <label> Email</label>
-                                                <input type="text" class="form-control" name="cpf">
+                                                <input type="text" class="form-control" name="email">
                                             </div>
                                         </div>  
                                     </div>
@@ -61,7 +61,7 @@
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <label> Instagram</label>
-                                                <input type="text" class="form-control" name="telefone">
+                                                <input type="text" class="form-control" name="instagram">
                                             </div>
                                         </div>  
                                     </div>
@@ -74,6 +74,7 @@
                                 </div>
                             </form>
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>
