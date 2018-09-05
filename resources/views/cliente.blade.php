@@ -14,7 +14,7 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="body">
-                            <form action="" method="POST">
+                            <form action="cliente/save" method="POST">
                                 <div class="row clearfix">
                                     <div class="body">
                                         <ul class="list-group">
@@ -77,7 +77,7 @@
                                         <button type="submit" class="btn btn-success waves-effect">Cadastrar</button>
                                     </center>
                                     <center>    
-                                        <button type="submit" class="btn btn-danger waves-effect">Excluir</button>
+                                        <button type="button" class="btn btn-danger waves-effect">Excluir</button>
                                     </center>
                                     
                                 </div>
