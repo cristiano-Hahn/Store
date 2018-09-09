@@ -31,14 +31,11 @@ class controllerLogin extends Controller
           }
           else{
               ?>
-              <center>
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-  <strong>Atenção!</strong> Usuário ou Senha Inválidos!
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-</center>
+                <center>
+                    <div class="alert alert-danger" style='opacity: 0.8;' role="alert">
+                        <strong>Atenção!</strong> Usuário ou Senha Inválidos!
+                    </div>
+                </center>
              <?php
         return view('login');  
     }

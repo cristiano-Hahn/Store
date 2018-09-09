@@ -3,16 +3,11 @@
 
 <!DOCTYPE html>
 <html>
-<link rel="icon" src="img/logo.png" type="image/x-icon">
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <title>Sistema Teste</title>
-    <!-- Favicon-->
     <link rel="icon" src="img/logo.png" type="image/x-icon">
-
-    <!-- Google Fonts -->
-
 </head>
 <script>
 if("exibe".checked){
@@ -27,7 +22,7 @@ document.getElementById("senha").type = "text";
    <div class="login-box">
         <div class="logo">
         <center>
-             <img id="profile-img"  src="img/logo.png" width="200" heigth="60">
+             <img id="profile-img"  src="img/logo.png" width="100" >
              </center>
              <br>
             <small><h4>Sistema Teste Engenharia de Software</h4></small>

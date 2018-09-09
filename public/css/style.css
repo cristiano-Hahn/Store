@@ -7725,10 +7725,13 @@ fieldset[disabled] .form-control {
 
 /* Login Page ================================== */
 .login-page {
-  background-image: linear-gradient(45deg, green, orange) ;
+  background-image: linear-gradient(45deg, rgb(114, 114, 114), rgb(204, 204, 204)) ;
   padding-left: 0;
   max-width: 360px;
-  margin: 10% auto;
+  margin-top: 20px;
+  margin-bottom: 140px;
+  margin-left: auto;
+  margin-right: auto;
   overflow-x: hidden; }
   .login-page .login-box .msg {
     color: #555;
@@ -7739,7 +7742,8 @@ fieldset[disabled] .form-control {
     text-decoration: none;
     color: #00BCD4; }
   .login-page .login-box .logo {
-    margin-bottom: 20px; }
+    margin: 0px; 
+  }
     .login-page .login-box .logo a {
       font-size: 36px;
       display: block;
