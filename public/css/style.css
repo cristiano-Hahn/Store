@@ -7718,10 +7718,16 @@ fieldset[disabled] .form-control {
 .dd3-content:hover {
   color: #2196F3; }
 
-
 .fundo{
-  background-image: linear-gradient(45deg, rgb(213, 213, 216), rgb(214, 214, 217)) ;
+  background-image: linear-gradient(45deg, #CDCFD0,#E2E2E2) ;
 }
+
+.cordafonte{
+  color: #000ed4;
+  font-style:italic;
+font-family: Helvetica;  
+}
+
 
 /* Login Page ================================== */
 .login-page {
