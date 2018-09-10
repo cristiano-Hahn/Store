@@ -10,11 +10,12 @@
     <link rel="icon" src="img/logo.png" type="image/x-icon">
 </head>
 <script>
-if("exibe".checked){
-    document.getElementById("senha").type = "text";    
-}
-function mostraSenha(){
-document.getElementById("senha").type = "text";
+    function mostraSenha(){
+    if (document.getElementById("senha").type == 'text')
+        document.getElementById("senha").type = "password";
+    else{
+        document.getElementById("senha").type = "text";
+    }
 }
 </script>
 
@@ -27,7 +28,7 @@ document.getElementById("senha").type = "text";
              <br>
             <small><h4>Sistema Teste Engenharia de Software</h4></small>
         </div>
-        <div class="card">
+        <div class="card" style='border-radius: 25px;'>
             <div class="body">
                  <form name="login" action="/autenticar" method="POST">
                  {{ csrf_field() }}
@@ -45,7 +46,7 @@ document.getElementById("senha").type = "text";
                             <i class="material-icons"></i>
                         </span>
                         <div class="form-line">
-                            <input type="password" class="form-control" name="senha" placeholder="Senha" required>
+                            <input id='senha' type="password" class="form-control" name="senha" placeholder="Senha" required>
                         </div>
                     </div>
                     <div class="row">
