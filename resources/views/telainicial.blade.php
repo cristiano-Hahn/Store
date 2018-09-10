@@ -27,15 +27,14 @@
 	  </div>
 	</div>
  <center>
- <div class="panel panel-success">
+ <div class="panel panel-primary" style= "margin-bottom: 0px;">
                         <div class="panel-heading">
                         <center>
-                        <h3>
+                        <h1>
                            Sistema de cores
-                            </h3>
+                            </h1>
                             </center>
-                        </div>
-                       
+                        </div>                       
                     </div>
 <!--<img src="css/img/logo.jpg">  -->
 
@@ -44,17 +43,16 @@
 
     <table class="table table-action" border="4">
    <tr>
-  <td width="350" height="150" > <a href="http://www.microsys.inf.br" target="_blank"> <img src="img/cadCliente.png" width="100%" height="200" disabled> </a> </td>
-<td width="350" height="150" > <a href="http://www.microsys.inf.br" target="_blank"> <img src=img/pesqCliente.png width="100%" height="200"> </a> </td>
- <td width="350" height="150" > <a href="http://www.microsys.inf.br" target="_blank"> <img src="img/cadVendedor.png" width="100%" height="200"> </a> </td>
+  <td width="350" height="440" > <a href="/cliente"> <img src="img/cadCliente.png" width="100%" height="440" disabled> </a> </td>
+<td width="350" height="440" > <a href="http://www.microsys.inf.br" > <img src=img/pesqCliente.png width="100%" height="440"> </a> </td>
+ <td width="350" height="440" > <a href="/vendedora"> <img src="img/cadVendedor.png" width="100%" height="440"> </a> </td>
    </tr>
    <tr>
-    <td><center> <h3> Cadastros de Clientes</h3></center> </td>
-   <td> <center> <h3> Pesquisa de clientes Cadastrados</h3></center> </td>
-    <td><center> <h3> Cadastros de Vendedores</h3></center> </td>
+    <td><center> <h3 class="cordafonte"> Cadastros de Clientes</h3></center> </td>
+   <td> <center> <h3 class="cordafonte"> Pesquisa de clientes Cadastrados</h3></center> </td>
+    <td><center> <h3 class="cordafonte"> Cadastros de Vendedores</h3></center> <a href="/vendedora"> </td>
     </tr>
     </table>
-   
-   
+     
   </body>
 </html>
