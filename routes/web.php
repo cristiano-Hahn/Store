@@ -11,33 +11,21 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Route::get('/login', ['uses'=>'controllerLogin@index']);
+
+Route::get('/', ['uses'=>'controllerLogin@index']);
 
 Route::get('/teste', ['uses'=>'controllerLogin@teste']);
 
 Route::get('/vendedora', ['uses'=>'controllerVendedora@cadvendedora']);
 
-Route::get('/contato', ['uses'=>'ContatoController@criar']);
-
-
-Route::get('/contato', ['uses'=>'ContatoController@criar']);
-
 Route::get('/telainicio', 'controllerTelainicial@telainicial');
 
 Route::post('/autenticar',['uses'=>'controllerLogin@autenticar']);
 
-Route::get('/cliente', 'controllerCliente@cadastro'
-);
+Route::get('/cliente', 'controllerCliente@cadastro');
 
-Route::get('/contato', ['uses'=>'ContatoController@criar']
-);
+Route::post('/cliente/save',['uses'=>'controllerCliente@save']);
 
 $this->resource('chamar', 'Inicio@Autenticar');
-
-Route::get('/contato/{id?}', function ($id = null) {
-    return "Contato id = $id";
-});

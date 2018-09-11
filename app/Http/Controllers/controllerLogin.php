@@ -25,8 +25,7 @@ class controllerLogin extends Controller
     {
         $dados = $req->all();
 
-         var_dump(attempt(['name'=>$dados['login'],'password'=>$dados['senha']]));
-         exit;   
+         
         if(Auth::attempt(['name'=>$dados['login'],'password'=>$dados['senha']])){
 
             return view('login');   

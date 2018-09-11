@@ -15,14 +15,14 @@ class Cliente extends Migration
     {
         Schema::create('clientes', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('nome');
-            $table->string('whatsapp');
-            $table->string('facebook');
-            $table->string('email');
-            $table->string('instagram');
-            $table->string('estilo');
-            $table->string('quentefrio');
-            $table->string('estacoes');
+            $table->string('nome')-> nullable();
+            $table->string('whatsapp') -> nullable();
+            $table->string('facebook')-> nullable();
+            $table->string('email')-> nullable();
+            $table->string('instagram')-> nullable();
+            $table->string('estilo')-> nullable();
+            $table->string('quentefrio')-> nullable();
+            $table->string('estacoes')-> nullable();
             $table->rememberToken();
             $table->timestamps();
         });
