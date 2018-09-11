@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use DB;
+use Auth;
+use App\User;
 
 class controllerLogin extends Controller
 {
@@ -24,12 +25,12 @@ class controllerLogin extends Controller
     {
         $dados = $req->all();
 
-        $verifica = DB ::table('usuarios')->where(['nome'=>$dados['login'],'senha'=>$dados['senha']])->get(); 
-        if(count($verifica) > 0)      
-       {
-            return view('teste');
+         var_dump(attempt(['name'=>$dados['login'],'password'=>$dados['senha']]));
+         exit;   
+        if(Auth::attempt(['name'=>$dados['login'],'password'=>$dados['senha']])){
+
+            return view('login');   
           }
-          else{
               ?>
               <center>
             <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -40,8 +41,7 @@ class controllerLogin extends Controller
 </div>
 </center>
              <?php
-        return view('login');  
-    }
+        return "Saiu Fora";
     }
 }
 ?>
