@@ -12,20 +12,24 @@
 */
 
 
-Route::get('/login', ['uses'=>'controllerLogin@index']);
-
-Route::get('/', ['uses'=>'controllerLogin@index']);
-
-Route::get('/teste', ['uses'=>'controllerLogin@teste']);
-
-Route::get('/vendedora', ['uses'=>'controllerVendedora@cadvendedora']);
-
-Route::get('/telainicio', 'controllerTelainicial@telainicial');
+Route::get('/login', [ 'as' => 'login', 'uses'=>'controllerLogin@index']);
 
 Route::post('/autenticar',['uses'=>'controllerLogin@autenticar']);
 
-Route::get('/cliente', 'controllerCliente@cadastro');
+Route::get('/logout', ['uses'=>'controllerLogin@logout']);
 
-Route::post('/cliente/save',['uses'=>'controllerCliente@save']);
+Route::group(['middleware' =>'auth'], function(){
 
+    Route::get('/', ['uses'=>'controllerLogin@index']);
+
+    Route::get('/cliente', 'controllerCliente@cadastro');
+
+    Route::get('/vendedora', ['uses'=>'controllerVendedora@cadvendedora']);
+
+    Route::get('/telainicio', 'controllerTelainicial@telainicial');
+
+    Route::get('/cliente', 'controllerCliente@cadastro');
+
+    Route::post('/cliente/save',['uses'=>'controllerCliente@save']);
+});
 $this->resource('chamar', 'Inicio@Autenticar');
