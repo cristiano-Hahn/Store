@@ -25,7 +25,6 @@ class controllerLogin extends Controller
           
         ?>
             <center>
-            <?php echo(bcrypt($dados["senha"])) ?>
               <div class="alert alert-danger" style='opacity: 0.8;' role="alert">
                   <strong>Atenção!</strong> Usuário ou Senha Inválidos!
               </div>

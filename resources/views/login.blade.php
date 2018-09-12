@@ -33,30 +33,29 @@
                  <form name="login" action="/autenticar" method="POST">
                  {{ csrf_field() }}
                     <div class="msg">Informe seu Usúario e Senha</div>
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <i class="material-icons"></i>
-                        </span>
-                        <div class="form-line">
-                            <input type="text" class="form-control" name="login" placeholder="Usuario" required autofocus>
-                        </div>
+                    
+                     
+                    <div class="input-field col s12">
+                        <input id="login" name="login" type="text" class="validate"  required>
+                        <label for="login">Usuário</label>
                     </div>
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <i class="material-icons"></i>
-                        </span>
-                        <div class="form-line">
-                            <input id='senha' type="password" class="form-control" name="senha" placeholder="Senha" required>
-                        </div>
+
+
+                    <div class="input-field col s12">
+                        <input id='senha' type="password" name="senha" class="validate"  required>
+                        <label for="senha">Senha</label>
                     </div>
-                    <div class="row">
-                        <div class="col-xs-8 p-t-5">
+                    
+
+
+                    
+                        <div class="col-xs-6 p-t-6">
                             <input type="checkbox" name="exibe" id="exibe" class="filled-in chk-col-green" onclick="mostraSenha()">
                             <label for="exibe">Exibir Senha</label>
                         </div>
-                        <div class="col-xs-4">
-                            <button class="btn btn-outline-success" type="submit">Acessar</button>
-                        </div>
+                  
+                    <div class="col-xs-6" style='align:right;'>
+                        <button class="btn btn-outline-success" type="submit">Acessar</button>
                     </div>
                     </div>
                 </form>
