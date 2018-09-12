@@ -1,12 +1,13 @@
 
+@extends('Bootstrap.extensao')
 <!DOCTYPE html>
 <html>
+    <head>
 <link rel="icon" href="img/logo.jpg" type="image/x-icon">
-<meta name="csrf-token" content="{{ csrf_token() }}">
-<head>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
 </head>						
 <body>
-@extends('Bootstrap.extensao')
 
 <div class="card">
     <div class="body">
@@ -63,12 +64,13 @@
                     </div>  
                 </div>
             </div>
+            <center>    
+                <button style="width: 150px" type="submit" class="btn btn-success waves-effect">Cadastrar</button>
+                <button style="width: 150px" type="button" class="btn btn-danger waves-effect">Excluir</button>
+            </center>
         </form>
     </div>
 </div>
-<center>    
-    <button style="width: 150px" type="submit" class="btn btn-success waves-effect">Cadastrar</button>
-    <button style="width: 150px" type="button" class="btn btn-danger waves-effect">Excluir</button>
-</center>
+
 </body>
 </html>

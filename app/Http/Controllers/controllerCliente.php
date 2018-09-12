@@ -20,6 +20,14 @@ class controllerCliente extends Controller
         $cliente->email = $req['email'];
         $cliente->instagram = $req['instagram'];
         $cliente->save();
-        return redirect('/cliente');
+
+        ?>
+        <center>
+              <div class="alert alert-success" style='opacity: 0.8;' role="alert">
+                  <strong>Sucesso!</strong> Cliente salvo com sucesso!
+              </div>
+            </center>
+            <?php
+        return view('cliente');
     }
 }

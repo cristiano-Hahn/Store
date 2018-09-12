@@ -8,51 +8,43 @@
 
    
   <title>Tela inicial</title>
-<script>
+  <script>
 	
 			
-			</script>
+	</script>
+
+      
 
 
 </head>	
 
 <body class="fundo">
   
-	<!-- Modal -->
-	<div class="modal fade bs-example-modal-lg" id="myModal" role="dialog" aria-labelledby="myLargeModalLabel" data-backdrop="static">
-	  <div class="modal-dialog modal-lg" role="document">
-	    <div class="modal-content">
-	      
-	    </div>
-	  </div>
-	</div>
+	
  <center>
- <div class="panel panel-primary" style= "margin-bottom: 0px;">
-                        <div class="panel-heading">
+ <div class="body" style="width: 100%">
+                    <ul class="list-group">
                         <center>
-                        <h1>
-                           Sistema de cores
-                            </h1>
-                            </center>
-                        </div>                       
-                    </div>
-<!--<img src="css/img/logo.jpg">  -->
-
-
+                            <li class="list-group-item list-group-item-info">
+                                <h2>Sistema de cores</h2>
+                            </li>
+                        </center>
+                    </ul>
+                </div>
 </center>
 
-    <table class="table table-action" border="4">
-   <tr>
-  <td width="350" height="440" > <a href="/cliente"> <img src="img/cadCliente.png" width="100%" height="440" disabled> </a> </td>
-<td width="350" height="440" > <a href="http://www.microsys.inf.br" > <img src=img/pesqCliente.png width="100%" height="440"> </a> </td>
- <td width="350" height="440" > <a href="/vendedora"> <img src="img/cadVendedor.png" width="100%" height="440"> </a> </td>
-   </tr>
-   <tr>
-    <td><center> <h3 class="cordafonte"> Cadastros de Clientes</h3></center> </td>
-   <td> <center> <h3 class="cordafonte"> Pesquisa de clientes Cadastrados</h3></center> </td>
-    <td><center> <h3 class="cordafonte"> Cadastros de Vendedores</h3></center> <a href="/vendedora"> </td>
-    </tr>
-    </table>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      <a href="/cliente"> <img src="img/cadCliente.png" width="100%"  disabled> </a>
+      <h3 class="cordafonte"> Cadastros de Clientes</h3>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      <a href="/telapesquisa" > <img src=img/pesqCliente.png width="100%" > </a>
+      <h3 class="cordafonte"> Pesquisa de clientes Cadastrados</h3>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+    <a href="/vendedora"> <img src="img/cadVendedor.png" width="100%" > </a>
+      <h3 class="cordafonte"> Cadastros de Vendedores</h3>
+    </div>
      
   </body>
 </html>
