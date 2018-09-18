@@ -19,6 +19,7 @@ Route::post('/autenticar',['uses'=>'controllerLogin@autenticar']);
 Route::get('/logout', ['uses'=>'controllerLogin@logout']);
 
 Route::group(['middleware' =>'auth'], function(){
+Route::get('/vendedora', ['uses'=>'controllerUsers@cadastro']);
 
     Route::get('/', ['uses'=>'controllerLogin@index']);
 

@@ -1,77 +1,66 @@
 
-@extends('Bootstrap.extensao')
-@section('conteudo')
-
 <!DOCTYPE html>
 <html>
-
+<link rel="icon" href="img/logo.jpg" type="image/x-icon">
+<meta name="csrf-token" content="{{ csrf_token() }}">
 <head>
-</head>
-						
+</head>						
 <body>
+@extends('Bootstrap.extensao')
 
-<?php
-
-if(!empty($_GET['resposta'])){
-
-    if($_GET['resposta']=='1'){
-    echo "<script>alert('Cadastro Efetuado com Sucesso!');</script>";
-    }
-    else{
-    echo "<script>alert('Erro ao efetuar cadastro!);</script>";
-    }
-}
-
-?>
-    <section class="content">
-        <div class="container-fluid">
-
-            <!-- #END# Inline Layout | With Floating Label -->
-            <!-- Multi Column -->
-           
-                           <div class="body">
-                            <ul class="list-group">
-                            <center>
-                                <li class="list-group-item list-group-item-info"><h4>Cadastro De Vendedor</h4></li>
-                               
-                           
-                            <br>
+<div class="card">
+    <div class="body">
+        <form action="vendedora/save" method="POST">
+        @csrf <!--token de autenticação-->
+            <div class="row clearfix">
+                <div class="body" style="width: 100%">
+                    <ul class="list-group">
+                        <center>
+                            <li class="list-group-item list-group-item-info">
+                                <h4>Cadastro de Vendedora</h4>
+                            </li>
+                        </center>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
+                    <div class="form-group">
+                        <div class="form-line">
+                            <label> Nome</label>
+                            <input type="text" class="form-control" name="nome" required>
                         </div>
-                                <div class="col-md-2">
-                                    <div class="form-group">
-                                        <div class="form-line">
-                                        <label> Nome </label>
-                                            <input type="text" class="form-control" name="nome" required>
-                                            
-                                            <label> Login </label>
-                                            <input type="text" class="form-control" name="login" required>
-                                            
-                                            <label> Senha </label>
-                                            <input type="text" class="form-control" name="senha" required>
-                                            
-                                            <label>E-mail</label>
-                                            <input type="text" class="form-control" name="email" required>
-                                            
-                                        </div>
-                                    </div>
-                                </div>  
-                            </div>
-                             </center>
-                             </ul>
-<center>
-                                
-                            <button type="submit" class="btn btn-success waves-effect">Cadastrar</button>
-                            
-                            </center>
-                            </form>
+                    </div>  
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
+                    <div class="form-group">
+                        <div class="form-line">
+                            <label> Login</label>
+                            <input type="text" class="form-control" name="login">
                         </div>
-                    </div>
+                    </div>  
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
+                    <div class="form-group">
+                        <div class="form-line">
+                            <label> Email</label>
+                            <input type="text" class="form-control" name="email">
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
+                    <div class="form-group">
+                        <div class="form-line">
+                            <label> Senha</label>
+                            <input type="password" class="form-control" name="senha">
+                        </div>
+                    </div>  
                 </div>
             </div>
-            <!-- #END# Multi Column -->
-        </div>
-    </section>
-
+        </form>
+    </div>
+</div>
+<center>    
+    <button style="width: 150px" type="submit" class="btn btn-success waves-effect">Cadastrar</button>
+    <button style="width: 150px" type="button" class="btn btn-danger waves-effect">Excluir</button>
+</center>
 </body>
-
 </html>
