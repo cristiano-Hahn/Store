@@ -24,7 +24,7 @@ class controllerCliente extends Controller
         $cliente->save();
 
         ?>
-        <center>
+            <center>
               <div class="alert alert-success" style='opacity: 0.8;' role="alert">
                   <strong>Sucesso!</strong> Cliente salvo com sucesso!
               </div>
@@ -39,11 +39,15 @@ class controllerCliente extends Controller
         return view('pesquisaCliente', ['clientes' => $clientes]);
     }
 
-    public function getAll()
+    public function delete(Request $req)
     {
+        $cliente = Cliente::find($req->id);
+
+        $cliente->delete();
+
         $clientes = DB::table('clientes')->get();
 
-        return view('pesquisaCliente', ['clientes' => $clientes]);
+        return view('pesquisaCliente', ['clientes' => $clientes, 'excluido' => true]);
     }
 
 

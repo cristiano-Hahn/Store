@@ -25,7 +25,17 @@
                     <div class="header">
                         <div class="panel panel-info"/>
                     <div class="panel-heading"/>
+                    <?php
+                        if(isset($excluido)){
+                            echo
+                            "<center>
+                                <div class='alert alert-success' role='alert'>
+                                    <strong>Sucesso!</strong> Cliente salvo com sucesso!
+                                </div>
+                            </center>";
+                        }
                     
+                    ?>
                 </div>       
             </div>
         </div>
@@ -50,9 +60,12 @@
                                 <td>$cliente->email</td>
                                 <td>$cliente->whatsapp</td>
                                 <td style='width: 150px' >  
-                                    <button style='width: 50px' 
-                                    type='button' class='btn btn-warning waves-effect'><i class='material-icons'>edit</i></button>
-                                    <button style='width: 50px' type='button' class='btn btn-danger waves-effect'><i class='material-icons'>delete</i></button>
+                                    <a href='/cliente'>                                
+                                        <button style='width: 50px'type='button' class='btn btn-warning waves-effect'><i class='material-icons'>edit</i></button>
+                                    </a>
+                                    <a href='/cliente/delete?id=$cliente->id'>
+                                        <button style='width: 50px' type='button' class='btn btn-danger waves-effect'><i class='material-icons'>delete</i></button>
+                                    </a>
                                 </td>
                             </tr>
                             
