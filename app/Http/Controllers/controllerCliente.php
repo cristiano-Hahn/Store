@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Cliente;
+use Illuminate\Support\Facades\DB;
+
 
 class controllerCliente extends Controller
 {
@@ -30,4 +32,19 @@ class controllerCliente extends Controller
             <?php
         return view('cliente');
     }
+
+    public function pesquisa(){
+        $clientes = DB::table('clientes')->get();
+
+        return view('pesquisaCliente', ['clientes' => $clientes]);
+    }
+
+    public function getAll()
+    {
+        $clientes = DB::table('clientes')->get();
+
+        return view('pesquisaCliente', ['clientes' => $clientes]);
+    }
+
+
 }

@@ -24,6 +24,8 @@ Route::group(['middleware' =>'auth'], function(){
 
     Route::get('/cliente', 'controllerCliente@cadastro');
 
+    Route::get('/cliente/pesquisa', 'controllerCliente@pesquisa');
+
     Route::get('/vendedora', ['uses'=>'controllerVendedora@cadvendedora']);
 
     Route::get('/telainicio', 'controllerTelainicial@telainicial');
