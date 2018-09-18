@@ -5,46 +5,66 @@
   <head>
   <meta http-equiv="Content-type" content="text/html; charset=UTF-8"> 
   <meta name="generator" content="PSPad editor, www.pspad.com">
-
-   
   <title>Tela inicial</title>
-  <script>
-	
-			
-	</script>
-
-      
-
-
 </head>	
 
-<body class="fundo">
+<body >
   
-	
- <center>
- <div class="body" style="width: 100%">
-                    <ul class="list-group">
-                        <center>
-                            <li class="list-group-item list-group-item-info">
-                                <h2>Sistema de cores</h2>
-                            </li>
-                        </center>
-                    </ul>
-                </div>
-</center>
+  <center>
+    <div class="body" style="width: 100%">
+      <ul class="list-group">
+        <center>
+          <li class="list-group-item list-group-item-info">
+            <h2>Sistema de cores</h2>
+          </li>
+        </center>
+      </ul>
+    </div>
+  </center>
 
+  <div class='row'>
+
+  <table>
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-      <a href="/cliente"> <img src="img/cadCliente.png" width="100%"  disabled> </a>
-      <h3 class="cordafonte"> Cadastros de Clientes</h3>
+      <div class="card">
+        <div class="card-image">
+          <img src="img/cadCliente.png">
+          <a href="/cliente" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+        </div>
+        <div class="card-content">
+          <span class="card-title">Cadastros de Clientes</span>
+          <p>Cadastrar um novo cliente.</p>
+        </div>
+      </div>
     </div>
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-      <a href="/telapesquisa" > <img src=img/pesqCliente.png width="100%" > </a>
-      <h3 class="cordafonte"> Pesquisa de clientes Cadastrados</h3>
+  </div>
+
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+    <div class="card">
+      <div class="card-image">
+        <img src="img/pesqCliente.png">
+        <a href="/telapesquisa" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+      </div>
+      <div class="card-content">
+        <span class="card-title">Pesquisa de clientes</span>
+        <p>Pesquisar um cliente cadastrado.</p>
+      </div>
     </div>
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-    <a href="/vendedora"> <img src="img/cadVendedor.png" width="100%" > </a>
-      <h3 class="cordafonte"> Cadastros de Vendedores</h3>
+  </div>
+
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+    <div class="card">
+      <div class="card-image">
+        <img src="img/cadVendedor.png">
+        <a href="/vendedora" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+      </div>
+      <div class="card-content">
+        <span class="card-title">Cadastros de Vendedores</span>
+        <p>Cadastrar um novo funcionário.</p>
+      </div>
     </div>
-     
-  </body>
+  </div>    
+</div>
+</table>
+</body>
 </html>

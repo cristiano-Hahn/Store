@@ -11,7 +11,7 @@
   <script type="text/javascript" src="js/materialize.min.js"></script>
 
 </head>						
-<body>
+<body> 
 
 <div class="card">
     <div class="body">
