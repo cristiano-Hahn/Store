@@ -28,7 +28,7 @@
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
       <div class="card">
         <div class="card-image">
-          <img src="img/cadCliente.png">
+          <img src="{{ asset('img/cadCliente.png') }}">
           <a href="/cliente" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
         </div>
         <div class="card-content">
@@ -42,7 +42,7 @@
   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
     <div class="card">
       <div class="card-image">
-        <img src="img/pesqCliente.png">
+        <img src="{{ asset('img/pesqCliente.png') }}">
         <a href="/telapesquisa" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
       </div>
       <div class="card-content">
@@ -55,7 +55,7 @@
   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
     <div class="card">
       <div class="card-image">
-        <img src="img/cadVendedor.png">
+        <img src="{{ asset('img/cadVendedor.png') }}">
         <a href="/vendedora" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
       </div>
       <div class="card-content">

@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/app.css" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <link href="materialize/css/materialize.css" rel="stylesheet">
     <link type="text/javascript" src="materialize/js/materialize.js" >
