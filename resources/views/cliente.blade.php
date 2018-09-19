@@ -29,35 +29,35 @@
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
                     <div class="input-field col s12">
-                        <input id="nome" type="text" class="validate">
+                        <input id="nome" name='nome' type="text" class="validate">
                         <label for="nome">Nome</label>
                     </div>
                 </div>   
 
                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
                     <div class="input-field col s12">
-                        <input id="whatsapp" type="text" class="validate">
+                        <input id="whatsapp" name='whatsapp' type="text" class="validate">
                         <label for="whatsapp">Whatsapp</label>
                     </div>
                 </div>   
 
                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
                     <div class="input-field col s12">
-                        <input id="facebook" type="text" class="validate">
+                        <input id="facebook" name='facebook' type="text" class="validate">
                         <label for="facebook">Facebook</label>
                     </div>
                 </div> 
 
                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
                     <div class="input-field col s12">
-                        <input id="email"type="text" class="validate">
+                        <input id="email" name='email' type="text" class="validate">
                         <label for="email">Email</label>
                     </div>
                 </div>   
 
                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
                     <div class="input-field col s12">
-                        <input id="instagram"type="text" class="validate">
+                        <input id="instagram" name= 'instagram'type="text" class="validate">
                         <label for="instagram">Instagram</label>
                     </div>
                 </div>   

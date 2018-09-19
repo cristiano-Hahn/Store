@@ -16,6 +16,7 @@ class controllerCliente extends Controller
 
     public function save(Request $req){
         $cliente = new Cliente;
+        
         $cliente->nome = $req['nome'];
         $cliente->whatsapp = $req['whatsapp'];
         $cliente->facebook = $req['facebook'];
@@ -30,7 +31,7 @@ class controllerCliente extends Controller
               </div>
             </center>
             <?php
-        return view('cliente');
+        return redirect('/cliente');
     }
 
     public function pesquisa(){
@@ -45,9 +46,14 @@ class controllerCliente extends Controller
 
         $cliente->delete();
 
-        $clientes = DB::table('clientes')->get();
-
-        return view('pesquisaCliente', ['clientes' => $clientes, 'excluido' => true]);
+        ?>
+            <center>
+              <div class="alert alert-success" style='opacity: 0.8;' role="alert">
+                  <strong>Sucesso!</strong> Cliente excluído com sucesso!
+              </div>
+            </center>
+        <?php
+        return redirect('/cliente/pesquisa');
     }
 
 
