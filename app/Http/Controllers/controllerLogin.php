@@ -23,6 +23,9 @@ class controllerLogin extends Controller
             return view('telainicial');   
           }
           
+          $password = bcrypt($dados['senha']);
+          echo $password;
+          
         ?>
             <center>
               <div class="alert alert-danger" style='opacity: 0.8;' role="alert">
