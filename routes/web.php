@@ -31,6 +31,8 @@ Route::get('/vendedora', ['uses'=>'controllerUsers@cadastro']);
 
     Route::get('/vendedora', ['uses'=>'controllerVendedora@cadvendedora']);
 
+    Route::post('/vendedora/save',['uses'=>'controllerUsers@save']);
+
     Route::get('/telainicio', 'controllerTelainicial@telainicial');
 
     Route::get('/cliente', 'controllerCliente@cadastro');

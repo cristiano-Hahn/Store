@@ -25,7 +25,6 @@
                     <div class="header">
                         <div class="panel panel-info"/>
                     <div class="panel-heading"/>
-<<<<<<< 695cbcc7be3e06348100caf05c782fa1ff3cd34b
                     <?php
                         if(isset($excluido)){
                             echo
@@ -37,9 +36,6 @@
                         }
                     
                     ?>
-=======
-                    
->>>>>>> cadastro de vendedora
                 </div>       
             </div>
         </div>
@@ -64,18 +60,15 @@
                                 <td>$cliente->email</td>
                                 <td>$cliente->whatsapp</td>
                                 <td style='width: 150px' >  
-<<<<<<< 695cbcc7be3e06348100caf05c782fa1ff3cd34b
                                     <a href='/cliente'>                                
                                         <button style='width: 50px'type='button' class='btn btn-warning waves-effect'><i class='material-icons'>edit</i></button>
                                     </a>
                                     <a href='/cliente/delete?id=$cliente->id'>
                                         <button style='width: 50px' type='button' class='btn btn-danger waves-effect'><i class='material-icons'>delete</i></button>
                                     </a>
-=======
                                     <button style='width: 50px' 
                                     type='button' class='btn btn-warning waves-effect'><i class='material-icons'>edit</i></button>
                                     <button style='width: 50px' type='button' class='btn btn-danger waves-effect'><i class='material-icons'>delete</i></button>
->>>>>>> cadastro de vendedora
                                 </td>
                             </tr>
                             
