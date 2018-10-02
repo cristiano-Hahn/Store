@@ -21,7 +21,11 @@ class controllerLogin extends Controller
          
         if(Auth::attempt(['name'=>$dados['login'],'password'=>$dados['senha']])){
             return view('telainicial');   
+            
           }
+
+          $passaword = bcrypt($dados['senha']);
+          echo $passaword;
           
           $password = bcrypt($dados['senha']);
           echo $password;
@@ -31,6 +35,7 @@ class controllerLogin extends Controller
               <div class="alert alert-danger" style='opacity: 0.8;' role="alert">
                   <strong>Atenção!</strong> Usuário ou Senha Inválidos!
               </div>
+      
             </center>
         <?php
         return view('login');  

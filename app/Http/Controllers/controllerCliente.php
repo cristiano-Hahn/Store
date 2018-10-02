@@ -56,5 +56,18 @@ class controllerCliente extends Controller
         return redirect('/cliente/pesquisa');
     }
 
+    public function pesquisa(){
+        $clientes = DB::table('clientes')->get();
+
+        return view('pesquisaCliente', ['clientes' => $clientes]);
+    }
+
+    public function getAll()
+    {
+        $clientes = DB::table('clientes')->get();
+
+        return view('pesquisaCliente', ['clientes' => $clientes]);
+    }
+
 
 }
