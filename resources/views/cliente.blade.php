@@ -52,7 +52,7 @@
                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
                     <div class="input-field col s12">
                     <input id="nome" name='nome' type="text" class="validate" value=<?php echo $nome?>>
-                    <input id="id" name='id' type="text" class="validate" value=<?php echo $id?> hidden>
+                    <input id="id" name='id' type="text" class="validate" hidden value=<?php echo $id?> >
                         <label for="nome">Nome</label>
                     </div>
                 </div>   
