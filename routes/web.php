@@ -29,7 +29,7 @@ Route::get('/vendedora', ['uses'=>'controllerUsers@cadastro']);
 
     Route::get('/cliente/delete', 'controllerCliente@delete');
 
-    Route::get('/vendedora', ['uses'=>'controllerVendedora@cadvendedora']);
+    Route::get('/vendedora', ['uses'=>'controllerUsers@cadvendedora']);
 
     Route::post('/vendedora/save',['uses'=>'controllerUsers@save']);
 
