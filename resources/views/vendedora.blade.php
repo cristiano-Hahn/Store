@@ -1,77 +1,68 @@
 
 @extends('Bootstrap.extensao')
-@section('conteudo')
-
 <!DOCTYPE html>
 <html>
+    <head>
+<link rel="icon" href="img/logo.jpg" type="image/x-icon">
 
-<head>
-</head>
-						
-<body>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
-<?php
 
-if(!empty($_GET['resposta'])){
+  <script type="text/javascript" src="js/materialize.min.js"></script>
 
-    if($_GET['resposta']=='1'){
-    echo "<script>alert('Cadastro Efetuado com Sucesso!');</script>";
-    }
-    else{
-    echo "<script>alert('Erro ao efetuar cadastro!);</script>";
-    }
-}
+</head>						
+<body> 
 
-?>
-    <section class="content">
-        <div class="container-fluid">
+<div class="card">
+    <div class="body">
+        <form action="vendedora/save" method="POST">
+        @csrf <!--token de autenticação-->
+            <div class="row">
+                <div class="body" style="width: 100%">
+                    <ul class="list-group">
+                        <center>
+                            <li class="list-group-item list-group-item-info">
+                                <h4>Cadastro de Vendedora</h4>
+                            </li>
+                        </center>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
+                    <div class="input-field col s12">
+                        <input name="nome" type="text" class="validate">
+                        <label for="nome">Nome</label>
+                    </div>
+                </div>   
 
-            <!-- #END# Inline Layout | With Floating Label -->
-            <!-- Multi Column -->
-           
-                           <div class="body">
-                            <ul class="list-group">
-                            <center>
-                                <li class="list-group-item list-group-item-info"><h4>Cadastro De Vendedor</h4></li>
-                               
-                           
-                            <br>
-                        </div>
-                                <div class="col-md-2">
-                                    <div class="form-group">
-                                        <div class="form-line">
-                                        <label> Nome </label>
-                                            <input type="text" class="form-control" name="nome" required>
-                                            
-                                            <label> Login </label>
-                                            <input type="text" class="form-control" name="login" required>
-                                            
-                                            <label> Senha </label>
-                                            <input type="text" class="form-control" name="senha" required>
-                                            
-                                            <label>E-mail</label>
-                                            <input type="text" class="form-control" name="email" required>
-                                            
-                                        </div>
-                                    </div>
-                                </div>  
-                            </div>
-                             </center>
-                             </ul>
-<center>
-                                
-                            <button type="submit" class="btn btn-success waves-effect">Cadastrar</button>
-                            
-                            </center>
-                            </form>
-                        </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
+                    <div class="input-field col s12">
+                        <input name="email" type="text" class="validate">
+                        <label for="email">Email</label>
                     </div>
                 </div>
+
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
+                    <div class="input-field col s12">
+                        <input name="senha"type="text" class="validate">
+                        <label for="senha">Senha</label>
+                    </div>
+                </div>   
+
+                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
+                    <div class="input-field col s12">
+                        <input name="nivel" type="text" class="validate">
+                        <label for="nivel">Nível</label>
+                    </div>
+                </div>   
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <center>    
+                <button style="width: 150px" type="submit" class="btn btn-success waves-effect">Cadastrar</button>
+                <button style="width: 150px" type="button" class="btn btn-danger waves-effect">Cancelar</button>
+            </center>
             </div>
-            <!-- #END# Multi Column -->
-        </div>
-    </section>
+        </form>
+    </div>
+</div>
 
 </body>
-
 </html>

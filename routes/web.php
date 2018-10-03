@@ -19,16 +19,21 @@ Route::post('/autenticar',['uses'=>'controllerLogin@autenticar']);
 Route::get('/logout', ['uses'=>'controllerLogin@logout']);
 
 Route::group(['middleware' =>'auth'], function(){
+Route::get('/vendedora', ['uses'=>'controllerUsers@cadastro']);
 
     Route::get('/', ['uses'=>'controllerLogin@index']);
 
     Route::get('/cliente', 'controllerCliente@cadastro');
 
+    Route::get('/cliente/editar', 'controllerCliente@editar');
+
     Route::get('/cliente/pesquisa', 'controllerCliente@pesquisa');
 
     Route::get('/cliente/delete', 'controllerCliente@delete');
 
-    Route::get('/vendedora', ['uses'=>'controllerVendedora@cadvendedora']);
+    Route::get('/vendedora', ['uses'=>'controllerUsers@cadvendedora']);
+
+    Route::post('/vendedora/save',['uses'=>'controllerUsers@save']);
 
     Route::get('/telainicio', 'controllerTelainicial@telainicial');
 
