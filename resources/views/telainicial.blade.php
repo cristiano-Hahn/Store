@@ -7,9 +7,17 @@
   <meta name="generator" content="PSPad editor, www.pspad.com">
   <title>Tela inicial</title>
 </head>	
-
 <body >
-  
+
+<?php
+ if ($usuarionivel==1) // 0 = administrador 1= usuario sem permissão de cad vendedor
+   $aparece = 'display:none';
+ else 
+  $aparece =' ';
+?> 
+
+
+
   <center>
     <div class="body" style="width: 100%">
       <ul class="list-group">
@@ -52,7 +60,8 @@
     </div>
   </div>
 
-  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style= <?php echo($aparece)?>>
     <div class="card">
       <div class="card-image">
         <img src="{{ asset('img/cadVendedor.png') }}">
@@ -64,6 +73,7 @@
       </div>
     </div>
   </div>    
+
 </div>
 </table>
 </body>

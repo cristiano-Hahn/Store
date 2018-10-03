@@ -10,5 +10,5 @@ class controllerTelainicial extends Controller
     {
         return view('telainicial');
     }
-
+    
 }
