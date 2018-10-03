@@ -15,8 +15,13 @@ class controllerCliente extends Controller
     }
 
     public function save(Request $req){
-        $cliente = new Cliente;
+        if($req['id'] == '' ){
+            $cliente = new Cliente;
+        }else{
+            $cliente = Cliente::find($req->id);
+        }
         
+    
         $cliente->nome = $req['nome'];
         $cliente->whatsapp = $req['whatsapp'];
         $cliente->facebook = $req['facebook'];
@@ -54,6 +59,13 @@ class controllerCliente extends Controller
             </center>
         <?php
         return redirect('/cliente/pesquisa');
+    }
+
+    public function editar(Request $req)
+    {
+        $cliente = Cliente::find($req->id);
+
+        return view('cliente', ['clienteSelecionado' => $cliente]);
     }
 
 

@@ -13,51 +13,73 @@
 </head>						
 <body> 
 
+
+
+<?php 
+    if (isset($clienteSelecionado)){
+        $titulo = 'Edição de cliente';
+        $id=$clienteSelecionado['id'];
+        $nome = $clienteSelecionado['nome'];
+        $whatsapp = $clienteSelecionado['whatsapp'];
+        $facebook = $clienteSelecionado['facebook'];
+        $email = $clienteSelecionado['email'];
+        $instagram = $clienteSelecionado['instagram'];
+    } else{
+        $id=''; 
+        $titulo = 'Cadastro de cliente';
+        $nome = '';
+        $whatsapp = '';
+        $facebook = '';
+        $email = '';
+        $instagram = '';
+    }
+?>
+
 <div class="card">
     <div class="body">
-        <form action="cliente/save" method="POST">
+        <form action=  "{{ url('cliente/save') }}" method="POST">
         @csrf <!--token de autenticação-->
             <div class="row">
                 <div class="body" style="width: 100%">
                     <ul class="list-group">
                         <center>
                             <li class="list-group-item list-group-item-info">
-                                <h4>Cadastro de Cliente</h4>
+                                <h4> <?php echo $titulo?></h4>
                             </li>
                         </center>
                     </ul>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
                     <div class="input-field col s12">
-                        <input id="nome" name='nome' type="text" class="validate">
+                    <input id="nome" name='nome' type="text" class="validate" value=<?php echo $nome?>>
+                    <input id="id" name='id' type="text" class="validate" value=<?php echo $id?> hidden>
                         <label for="nome">Nome</label>
                     </div>
                 </div>   
-
                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
                     <div class="input-field col s12">
-                        <input id="whatsapp" name='whatsapp' type="text" class="validate">
+                        <input id="whatsapp" name='whatsapp' type="text" class="validate"value=<?php echo $whatsapp?>>
                         <label for="whatsapp">Whatsapp</label>
                     </div>
                 </div>   
 
                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
                     <div class="input-field col s12">
-                        <input id="facebook" name='facebook' type="text" class="validate">
+                        <input id="facebook" name='facebook' type="text" class="validate" value=<?php echo $facebook?>>
                         <label for="facebook">Facebook</label>
                     </div>
                 </div> 
 
                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
                     <div class="input-field col s12">
-                        <input id="email" name='email' type="text" class="validate">
+                        <input id="email" name='email' type="text" class="validate" value=<?php echo $email?>>
                         <label for="email">Email</label>
                     </div>
                 </div>   
 
                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
                     <div class="input-field col s12">
-                        <input id="instagram" name= 'instagram'type="text" class="validate">
+                        <input id="instagram" name= 'instagram'type="text" class="validate" value=<?php echo $instagram?>>
                         <label for="instagram">Instagram</label>
                     </div>
                 </div>   

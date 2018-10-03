@@ -43,7 +43,7 @@
     <div class="card">
       <div class="card-image">
         <img src="{{ asset('img/pesqCliente.png') }}">
-        <a href="/telapesquisa" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+        <a href="/cliente/pesquisa" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
       </div>
       <div class="card-content">
         <span class="card-title">Pesquisa de clientes</span>
