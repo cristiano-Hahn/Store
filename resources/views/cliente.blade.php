@@ -83,6 +83,44 @@
                         <label for="instagram">Instagram</label>
                     </div>
                 </div>   
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
+                    <div class="input-group mb-1">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">Temperatura</label>
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect01">
+                            <option value="1">Quente</option>
+                            <option value="2">Frio</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
+                    <div class="input-group mb-1">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">Estações</label>
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect01">
+                            <option value="1">Primavera</option>
+                            <option value="2">Outono</option>
+                            <option value="3">Inverno</option>
+                            <option value="4">Verão</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
+                    <div class="input-group mb-1">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">Estilos</label>
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect01">
+                            <option value="1">Esportivo</option>
+                            <option value="2">Casual</option>
+                            <option value="3">Despojado</option>
+                            <option value="4">Formal</option>
+                            <option value="5">Elegante</option>
+                        </select>
+                    </div>
+                </div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <center>    
                 <button style="width: 150px" type="submit" class="btn btn-success waves-effect">Cadastrar</button>
